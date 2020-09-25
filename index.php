@@ -96,13 +96,17 @@ if(empty($posted['hash']) && sizeof($posted) > 0) {
         <tr>
           <td>Amount: </td>
           <td><input name="amount" value="<?php echo (empty($posted['amount'])) ? '' : $posted['amount'] ?>" /></td>
+	</tr>
+	<tr>
           <td>First Name: </td>
           <td><input name="firstname" id="firstname" value="<?php echo (empty($posted['firstname'])) ? '' : $posted['firstname']; ?>" /></td>
         </tr>
         <tr>
           <td>Email: </td>
           <td><input name="email" id="email" value="<?php echo (empty($posted['email'])) ? '' : $posted['email']; ?>" /></td>
-          <td>Phone: </td>
+	</tr>
+	<tr>
+	  <td>Phone: </td>
           <td><input name="phone" value="<?php echo (empty($posted['phone'])) ? '' : $posted['phone']; ?>" /></td>
         </tr>
         <tr>
