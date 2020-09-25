@@ -112,11 +112,11 @@ if(empty($posted['hash']) && sizeof($posted) > 0) {
     
         <tr style="display: none;">
           <td>Success URI: </td>
-          <td colspan="3"><input name="surl" value="<?php echo (empty($posted['surl'])) ? 'http://localhost/Pay/success.php' : $posted['surl'] ?>" size="64" /></td>
+          <td colspan="3"><input name="surl" value="<?php echo (empty($posted['surl'])) ? 'https://money-pay.herokuapp.com/success.php' : $posted['surl'] ?>" size="64" /></td>
         </tr>
         <tr style="display: none;">
           <td>Failure URI: </td>
-          <td colspan="3"><input name="furl" value="<?php echo (empty($posted['furl'])) ? 'http://localhost/Pay/failure.php' : $posted['furl'] ?>" size="64" /></td>
+          <td colspan="3"><input name="furl" value="<?php echo (empty($posted['furl'])) ? 'https://money-pay.herokuapp.com/failure.php' : $posted['furl'] ?>" size="64" /></td>
         </tr>
 
         <tr>
